@@ -1,6 +1,6 @@
 <?php
 
-namespace Developion\FieldParser\models;
+namespace Developion\FieldParser\Models;
 
 use Craft;
 use craft\base\Model;
