@@ -3,7 +3,7 @@
 	"description": "Field value parser for non-craftcms utilities and services.",
 	"type": "craft-plugin",
 	"license": "mit",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"support": {
 		"email": "marko.gajic@developion.com",
 		"issues": "https://github.com/developion/craft-field-parser/issues?state=open",

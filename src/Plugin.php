@@ -45,9 +45,11 @@ class Plugin extends BasePlugin
 
 		// Defer most setup tasks until Craft is fully initialized
 		Craft::$app->onInit(function () {
-			/** @var HtmlDumper $dumper */
-			$dumper = Craft::$app->getDumper();
-			$dumper->setTheme('dark');
+			if (!Craft::$app->getRequest()->getIsConsoleRequest()) {
+				/** @var HtmlDumper $dumper */
+				$dumper = Craft::$app->getDumper();
+				$dumper->setTheme('dark');
+			}
 			$this->attachEventHandlers();
 			$this->getFieldParsers();
 		});
